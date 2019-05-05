@@ -18,6 +18,55 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
 <![endif]-->
+<style>
+    .imagebox
+    {
+        height:200px;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+    }
+    .imgBx
+    {
+    position:relative;
+    width:600px;
+    height:700px;
+    }
+    .imgBx img:nth-child(1)
+    {
+    position:absolute;
+    top:0;
+    Left:0;
+    width:120%;
+    height:65%;
+    transform-origin:left;
+    }
+    .imgBx:hover img:nth-child(1)
+    {
+    transition:4s;
+    transition-delay:1s;
+    transform:translateX(100px);
+    opacity:0;
+    filter:blur(10px);
+    
+    }  
+    .imgBx img:nth-child(2)
+    {
+    width:1300px;
+    height:470px;
+    transform:translateX(20px) scaleX(0);
+    transform-origin:left;
+    }
+    .imgBx:hover  img:nth-child(2)
+    {
+    transition:8s;
+    transform:translateX(-400px) scaleX(1);
+    }
+    </style>
 </head>
 <body>
 
@@ -123,7 +172,14 @@
             </div>
             <div class="col-sm-6">
                 <h3 class="tpad">Trending Events</h3><hr>
-                
+                <div class="imagebox">
+                    <div class="imgBx">
+                        <img src="images/syera.jpg" onclick="window.open('https://www.youtube.com/watch?v=NMRJTTMMmZw')">
+                        <img src="images/noise.png" onclick="window.open('https://www.youtube.com/watch?v=NMRJTTMMmZw')">
+                      <center><h1>syera narasimha reddy</h1></center></div>
+                    </div>
+                   
+                </div>
                
             </div>
         </div>
